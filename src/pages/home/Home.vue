@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json')
+      axios.get('/Travel/static/mock/index.json')
         .then(this.getHomeInfoSucc)
         .catch(() => {
           console.log('error')
