@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 /* 禁用iPhone中Safari的字号自动调整 */
 html {
     -webkit-text-size-adjust: 100%;
