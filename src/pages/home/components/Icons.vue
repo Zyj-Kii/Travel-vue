@@ -1,6 +1,6 @@
 <template>
-    <div class="icons">
-        <swiper>
+    <div v-if="list.length" class="icons">
+        <swiper :options="swiperOption">
             <swiper-slide v-for="(page, index) of pages" :key="index">
                 <div class="icon" v-for="icon of page" :key="icon.id">
                     <div class="icon-img">
@@ -16,66 +16,20 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      icons: [
-        {
-          iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-          title: '景点门票',
-          id: '0001'
-        },
-        {
-          iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/27/dac2bcf9added702.png',
-          title: '海滨海岛',
-          id: '0002'
-        },
-        {
-          iconUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-          title: '江门必游',
-          id: '0003'
-        },
-        {
-          iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
-          title: '泡温泉',
-          id: '0004'
-        },
-        {
-          iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png',
-          title: '自然风光',
-          id: '0005'
-        },
-        {
-          iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png',
-          title: '亲子游',
-          id: '0006'
-        },
-        {
-          iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png',
-          title: '名胜古迹',
-          id: '0007'
-        },
-        {
-          iconUrl: 'https://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png',
-          title: '打卡圣地',
-          id: '0008'
-        },
-        {
-          iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/b1/528a9e80403b8c02.png',
-          title: '玩转长隆',
-          id: '0009'
-        },
-        {
-          iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png',
-          title: '全部玩乐',
-          id: '0010'
-        }
-      ]
+      swiperOption: {
+        autoplay: false
+      }
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.icons.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []
