@@ -21,7 +21,7 @@ export default {
             width 100%
             height .62rem
             line-height .62rem
-            padding 0 .1rem
+            padding 0 .01rem
             text-align center
             border-radius .06rem
             outline none
