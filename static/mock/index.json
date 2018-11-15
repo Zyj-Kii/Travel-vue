@@ -77,25 +77,25 @@
         "img": "http://img1.qunarzz.com/sight/source/1602/9c/39c5ce9ff58609.jpg_r_640x214_efb90102.jpg",
         "title": "粤西温泉必游",
         "desc": "自驾粤西，寻找自己心仪的温泉池",
-        "id": 1
+        "id": "0001"
       },
       {
         "img": "http://img1.qunarzz.com/sight/source/1506/45/313877f3917dbe.jpg_r_640x214_1c113e46.jpg",
         "title": "江门必游TOP10",
         "desc": "你不可错过的休闲度假之地",
-        "id": 2
+        "id": "0002"
       },
       {
         "img": "http://img1.qunarzz.com/sight/source/1507/2f/d4ae428228a1c1.jpg_r_640x214_a5fce01f.jpg",
         "title": "四季都爱玩水",
         "desc": "一年四季的舒适，清爽，养生",
-        "id": 3
+        "id": "0003"
       },
       {
         "img": "http://img1.qunarzz.com/sight/source/1507/a0/38e6caf2633ea8.jpg_r_640x214_22535e06.jpg",
         "title": "周末去哪儿玩",
         "desc": "江门当地人周末好去处",
-        "id": 4
+        "id": "0004"
       }
     ],
     "recommendList": [
@@ -103,25 +103,25 @@
         "img": "http://img1.qunarzz.com/sight/p0/1810/2b/2bb1fc603cf64c50a3.img.jpg_200x200_16f89fef.jpg",
         "title": "喜运来温泉",
         "desc": "江门首站，浪费温泉之旅",
-        "id": 1
+        "id": "0001"
       },
       {
         "img": "http://img1.qunarzz.com/sight/p0/1409/04/d22f832f528e0123af655b56e7f50b86.jpg_200x200_09f00917.jpg",
         "title": "上川岛",
         "desc": "广东最美海岛，共度美好时光",
-        "id": 2
+        "id": "0002"
       },
       {
         "img": "http://img1.qunarzz.com/sight/p0/1603/16/16bce10bda0f2d9c90.water.jpg_200x200_28af1a65.jpg",
         "title": "康桥温泉度假村",
         "desc": "超值度假村十日游",
-        "id": 3
+        "id": "0003"
       },
       {
         "img": "http://img1.qunarzz.com/sight/p0/1603/73/73eb4b1a0048bbaf90.water.jpg_200x200_97d9f846.jpg",
         "title": "新会古兜温泉",
         "desc": "新会小城一日游，解放疲劳",
-        "id": 4
+        "id": "0004"
       }
     ]
   }
