@@ -1,10 +1,10 @@
 <template>
     <div>
         <div class="banner" @click="handleBannerClick">
-            <img class="banner-img" src="//img1.qunarzz.com/sight/p0/1810/2b/2bb1fc603cf64c50a3.img.jpg_600x330_9a7b8cf2.jpg" alt="喜运来温泉">
+            <img class="banner-img" :src="this.bannerImg" :alt="productName">
             <div class="banner-info">
-                <div class="banner-number"><span class="iconfont banner-icon">&#xe602;</span>28</div>
-                <div class="banner-title">喜运来温泉</div>
+                <div class="banner-number"><span class="iconfont banner-icon">&#xe602;</span>{{this.imgs.length}}</div>
+                <div class="banner-title">{{this.productName}}</div>
             </div>
         </div>
         <common-gallery :imgs="imgs" v-show="showGallery" @galleryClick="handleGalleryClick"></common-gallery>
@@ -16,9 +16,13 @@
 import CommonGallery from 'common/gallery/Gallery'
 export default {
   name: 'DetailBanner',
+  props: {
+    productName: String,
+    bannerImg: String,
+    imgs: Array
+  },
   data () {
     return {
-      imgs: ['//img1.qunarzz.com/sight/p0/1810/2b/2bb1fc603cf64c50a3.img.jpg_r_800x800_66b109ff.jpg', '//img1.qunarzz.com/sight/p0/1810/e5/e5418560e6b5c7c8a3.img.jpg_r_800x800_7593ce0a.jpg'],
       showGallery: false
     }
   },

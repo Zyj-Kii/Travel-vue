@@ -11,7 +11,7 @@
             <router-link to="/">
                 <div class="iconfont header-fixed-back">&#xe624;</div>
             </router-link>
-            喜运来温泉
+            {{this.productName}}
         </div>
     </div>
 </template>
@@ -19,6 +19,9 @@
 <script>
 export default {
   name: 'DetailHeader',
+  props: {
+    productName: String
+  },
   data () {
     return {
       showAbs: true,
