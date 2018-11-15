@@ -65,7 +65,7 @@ export default {
       this.scroll.scrollToElement(element)
     }
   },
-  mounted () {
+  activated () {
     this.scroll = new BScroll(this.$refs.wrapper)
   }
 }

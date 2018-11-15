@@ -62,9 +62,9 @@ export default {
                 bottom .13rem
                 line-height .34rem
                 margin-top .2rem
-                background-color #ff9300
                 padding .1rem
                 border-radius .1rem
                 color #fff
                 box-shadow .03rem .03rem .03rem .03rem #ccc
+                background linear-gradient(to right, #ffb300, #ffa100)
 </style>

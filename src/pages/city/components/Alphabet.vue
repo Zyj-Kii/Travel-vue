@@ -6,7 +6,7 @@
         :key="alpha"
         :ref="alpha"
         @click="handleLetterClick"
-        @touchstart="handleTouchStart"
+        @touchstart.prevent="handleTouchStart"
         @touchmove="handleTouchMove"
         @touchend="handleTouchEnd"
         >{{alpha}}</li>
