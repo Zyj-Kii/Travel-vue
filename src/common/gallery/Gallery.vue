@@ -4,7 +4,7 @@
             <swiper :options="swiperOptions">
                 <!-- slides -->
                 <swiper-slide v-for="(img, index) in imgs" :key="index">
-                    <img class="gallary-img" :src="img" alt="slide">
+                    <img class="gallery-img" :src="img" alt="slide">
                 </swiper-slide>
                 <div class="swiper-pagination"  slot="pagination"></div>
             </swiper>
@@ -59,7 +59,7 @@ export default {
             width 100%
             height 0
             padding-bottom 100%
-            .gallary-img
+            .gallery-img
                 width 100%
             .swiper-pagination
                 color #fff
